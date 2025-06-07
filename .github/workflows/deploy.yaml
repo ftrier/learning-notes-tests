@@ -75,6 +75,6 @@ jobs:
       run: jupyter-book build learning-notes --builder pdflatex
 
     - name: Upload artifact
-    - uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v4
       with:
         path: learning-notes/_build/latex/learning-notes.pdf
